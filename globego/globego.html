@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeGo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #60A5FA, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 font-sans">
+
+    <nav class="fixed w-full z-50 glass-card py-4 px-6 flex justify-between items-center">
+        <div class="text-2xl font-bold gradient-text tracking-tighter">🌍 GlobeGo</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#why-globego" class="hover:text-blue-400 transition">Özellikler</a>
+            <a href="#roadmap" class="hover:text-blue-400 transition">Yol Haritası</a>
+            <a href="#users" class="hover:text-blue-400 transition">Kitlemiz</a>
+            <a href="#contact" class="hover:text-blue-400 transition">İletişim</a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-blue-600/5 blur-[120px] rounded-full -z-10"></div>
+
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-12 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    
+                    <div class="relative bg-[#0f172a] p-5 rounded-full border border-white/10 shadow-2xl">
+                        <i class="fa-solid fa-earth-americas text-5xl md:text-6xl text-blue-500"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inline-flex items-center space-x-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-8">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-blue-400">Geleceğin Seyahat Deneyimi</span>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-8 tracking-tighter leading-tight max-w-5xl mx-auto">
+                Tek Tıkla Dünya
+                <span class="gradient-text whitespace-nowrap">Akıllı Seyahat Asistanın</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-slate-400 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+                GlobeGo, seyahat planlamayı sıradan bir görevden <strong class="text-slate-200">akıllı bir keşfe</strong> dönüştürür. Bütçe analitiği ve gerçek zamanlı senkronizasyon ile sınırları kaldırın.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="#waitlist" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(37,99,235,0.3)] flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-rocket"></i> Erken Erişime Katıl
+                    </a>
+                    
+                    <a href="#ecosystem-preview" class="w-full sm:w-auto glass-card hover:bg-white/10 px-10 py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-2 border border-white/10">
+                        <i class="fa-solid fa-play-circle"></i> Ekosistemi İzle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-globego" class="py-24 px-6 bg-slate-900/50">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Neden GlobeGo?</h2>
+            <p class="text-slate-400 max-w-3xl mx-auto">
+                Geleneksel seyahat uygulamalarının aksine GlobeGo, veri odaklı ve kullanıcı merkezli yaklaşımıyla yolculuğunuzun her anını optimize eder.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-3xl border border-white/5 hover:border-blue-500/30 transition">
+                <h3 class="text-xl font-bold mb-4">Uygulama Kalabalığına Son</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Planlama, mesajlaşma ve harcama takibi tek bir ekosistemde. 5 farklı uygulama arasında kaybolmaya son verin.
+                </p>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-white/5 hover:border-purple-500/30 transition">
+                <h3 class="text-xl font-bold mb-4">Kusursuz Grup Uyumu</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Gerçek zamanlı senkronizasyon ile herkes aynı planı görür. "Nereye gidiyoruz?" soruları artık tarihe karışıyor.
+                </p>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-white/5 hover:border-emerald-500/30 transition">
+                <h3 class="text-xl font-bold mb-4">Akıllı Bütçe Takibi</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Yapay zeka limitlerinizi anlık izler ve aşmamanız için size en uygun maliyetli seçenekleri sunar.
+                </p>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-white/5 hover:border-amber-500/30 transition">
+                <h3 class="text-xl font-bold mb-4">Çevrimdışı Dijital Kasa</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    İnternet olmasa da bilet ve planlarınıza erişin. Yolculuğunuz hiçbir kesintiye uğramasın.
+                </p>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-white/5 hover:border-rose-500/30 transition lg:col-span-2">
+                <h3 class="text-xl font-bold mb-4">Anlık Rota Keşfi</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Kararsız mı kaldınız? O anki modunuza ve kalan bütçenize göre yapay zeka tarafından optimize edilmiş rotaları anında keşfedin.
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="roadmap" class="py-24 bg-slate-900/30 px-6">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Stratejik Yol Haritası</h2>
+            <p class="text-slate-400">GlobeGo'nun yerel bir planlayıcıdan küresel bir seyahat asistanına dönüşüm süreci.</p>
+        </div>
+
+        <div class="space-y-8">
+            <div class="glass-card p-8 rounded-3xl border-l-4 border-l-emerald-500 relative overflow-hidden">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-emerald-500 font-bold text-sm">FAZ 1</span>
+                            <h3 class="text-xl font-bold">Çekirdek Mimari ve Bulut Entegrasyonu</h3>
+                        </div>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                            <li><strong>Feature-First Mimari:</strong> Bağımsız, modüler ve test edilebilir altyapı (Auth, Chat, Planning).</li>
+                            <li><strong>Firebase Entegrasyonu:</strong> Firestore ile gerçek zamanlı veri senkronizasyonu.</li>
+                        </ul>
+                    </div>
+                    <span class="bg-emerald-500/20 text-emerald-400 px-4 py-1 rounded-full text-xs font-bold self-start md:self-center border border-emerald-500/30">
+                        <i class="fa-solid fa-check-circle mr-1"></i> TAMAMLANDI
+                    </span>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border-l-4 border-l-blue-500 relative">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-blue-500 font-bold text-sm">FAZ 2</span>
+                            <h3 class="text-xl font-bold">Kullanıcı Deneyimi ve Arayüz (UX/UI)</h3>
+                        </div>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                            <li><strong>Dinamik Tema:</strong> Sistemle uyumlu otomatik Dark Mode yönetimi.</li>
+                            <li><strong>Modern Widget Kütüphanesi:</strong> İnteraktif haritalar ve akıcı animasyonlar.</li>
+                            <li><strong>Responsive Tasarım:</strong> Tüm iOS ve Android ekranlarına tam uyum.</li>
+                        </ul>
+                    </div>
+                    <span class="bg-blue-500/20 text-blue-400 px-4 py-1 rounded-full text-xs font-bold self-start md:self-center border border-blue-500/30 animate-pulse">
+                        <i class="fa-solid fa-spinner mr-1"></i> DEVAM EDİYOR
+                    </span>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border-l-4 border-l-purple-500 relative">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-purple-500 font-bold text-sm">FAZ 3</span>
+                            <h3 class="text-xl font-bold">Yapay Zeka ve Akıllı Algoritmalar</h3>
+                        </div>
+                        <ul class="text-sm text-slate-400 space-y-2 list-disc list-inside">
+                            <li><strong>AI Bütçe Motoru:</strong> Fiyat/performans odaklı aktivite eşleştirme modeli.</li>
+                            <li><strong>Lokalizasyon:</strong> İngilizce, Almanca ve Fransızca dil destekleri.</li>
+                            <li><strong>Akıllı Bildirimler:</strong> Kullanıcı davranışına göre kişiselleştirilmiş fırsatlar.</li>
+                        </ul>
+                    </div>
+                    <span class="bg-purple-500/20 text-purple-400 px-4 py-1 rounded-full text-xs font-bold self-start md:self-center border border-purple-500/30">
+                        <i class="fa-solid fa-rocket mr-1"></i> BAŞLATILDI
+                    </span>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border-l-4 border-l-slate-600 opacity-70">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-slate-400 font-bold text-sm">FAZ 4</span>
+                            <h3 class="text-xl font-bold">Finansal Ekosistem ve QR Entegrasyonu</h3>
+                        </div>
+                        <p class="text-sm text-slate-400 italic">Partner lokasyonlarda QR indirim sistemi ve grup içi otomatik harcama bölüştürme (Split Bill).</p>
+                    </div>
+                    <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Planlandı</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border-l-4 border-l-slate-800 opacity-50">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-slate-500 font-bold text-sm">FAZ 5</span>
+                            <h3 class="text-xl font-bold">Çevrimdışı Erişim ve Küresel Genişleme</h3>
+                        </div>
+                        <p class="text-sm text-slate-400 italic">Tam kapsamlı çevrimdışı haritalar ve global seyahat acenteleri ile doğrudan API entegrasyonu.</p>
+                    </div>
+                    <span class="text-slate-600 text-xs font-bold uppercase tracking-widest">Vizyon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="users" class="py-24 px-6 bg-slate-900/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Senin İçin GlobeGo</h2>
+                <p class="text-slate-400">Her gezginin hikayesi farklıdır. GlobeGo, senin önceliklerine göre şekil alır.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <div class="glass-card p-8 rounded-3xl border-t-2 border-t-blue-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-4xl">🎒</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Sırt Çantalı Gezgin</h4>
+                            <p class="text-xs text-blue-400 uppercase tracking-widest font-semibold">AI Bütçe Yönetimi</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"Finansal sınırları aşmadan, en verimli rotalarla maksimum deneyim."</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border-t-2 border-t-purple-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-4xl">👥</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Grup Lideri</h4>
+                            <p class="text-xs text-purple-400 uppercase tracking-widest font-semibold">Canlı Senkronizasyon</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"Tüm ekiple canlı planlama; harici mesajlaşma karmaşasına son."</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border-t-2 border-t-emerald-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-4xl">💻</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Dijital Göçebe</h4>
+                            <p class="text-xs text-emerald-400 uppercase tracking-widest font-semibold">Offline Dijital Kasa</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"İnternet olmasa da tüm belge ve rezervasyonlara kesintisiz erişim."</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border-t-2 border-t-rose-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-4xl">🎓</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Öğrenci Grupları</h4>
+                            <p class="text-xs text-rose-400 uppercase tracking-widest font-semibold">Otomatik Borç Takibi</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"Seyahat sonrası 'kim kime ne kadar borçlu' stresine otomatik çözüm."</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border-t-2 border-t-amber-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-4xl">⏱️</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Titiz Planlayıcı</h4>
+                            <p class="text-xs text-amber-400 uppercase tracking-widest font-semibold">Akıllı Zaman Çizelgesi</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"Dakika dakika işlenen bir planla sıfır zaman kaybı."</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border-t-2 border-t-indigo-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <span class="text-4xl">🏛️</span>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Kültür Meraklısı</h4>
+                            <p class="text-xs text-indigo-400 uppercase tracking-widest font-semibold">AI Paket Kürasyonu</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"İlgi alanlarına özel müze ve tarihi mekan önerileri."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 italic">Bize Ulaşın</h2>
+                <p class="text-slate-400">GlobeGo ekosistemi hakkında sorularınız mı var veya iş birliği mi yapmak istiyorsunuz?</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="glass-card p-8 rounded-3xl border border-white/5 h-full flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 text-blue-400">GlobeGo Global İletişim</h3>
+                            <p class="text-slate-400 mb-8 leading-relaxed">
+                                Dünyanın neresinde olursanız olun, seyahatinizi akıllı hale getirmek için buradayız. Sosyal medya üzerinden bizi takip edebilir veya doğrudan e-posta gönderebilirsiniz.
+                            </p>
+                            
+                            <div class="space-y-6 text-sm">
+                                <div class="flex items-center gap-4 group">
+                                    <div class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition duration-300">
+                                        <i class="fa-solid fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">E-Posta Adresimiz</p>
+                                        <a href="mailto:ozdemirmmehmet@gmail.com" class="text-lg font-medium hover:text-blue-400 transition">ozdemirmmehmet@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-500">
+                                        <i class="fa-solid fa-location-dot text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Merkez</p>
+                                        <p class="text-lg font-medium">Muğla / Türkiye</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 flex gap-4">
+                            <div class="mt-12 flex gap-4">
+                                <a href="https://www.instagram.com/_zdmr_mhmt_/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 glass-card rounded-xl flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f9ce34] hover:to-[#ee2a7b] hover:-translate-y-1 transition duration-300 shadow-lg">
+                                    <i class="fa-brands fa-instagram text-xl text-white"></i>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/mehmetozdemirmo/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 glass-card rounded-xl flex items-center justify-center hover:bg-[#0077b5] hover:-translate-y-1 transition duration-300 shadow-lg">
+                                    <i class="fa-brands fa-linkedin-in text-xl text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl border border-white/5">
+                    <form action="mailto:ozdemirmmehmet@gmail.com" method="post" enctype="text/plain" class="space-y-5">
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2 font-bold">Ad Soyad</label>
+                                <input type="text" name="name" required placeholder="Adınız" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2 font-bold">E-Posta</label>
+                                <input type="email" name="email" required placeholder="E-posta adresiniz" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2 font-bold">Konu</label>
+                            <input type="text" name="subject" placeholder="Nasıl yardımcı olabiliriz?" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2 font-bold">Mesajınız</label>
+                            <textarea name="message" rows="5" required placeholder="Mesajınızı detaylandırın..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold py-5 rounded-xl shadow-xl shadow-blue-500/20 transition-all active:scale-[0.98]">
+                            Mesajı Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="ecosystem-preview" class="py-24 px-6 bg-[#0f172a]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Ekosisteme İlk Bakış</h2>
+                <p class="text-slate-400">GlobeGo henüz yayında değil, ancak sizi nelerin beklediğini keşfedin.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="glass-card p-4 rounded-[2.5rem] border-white/10 shadow-2xl overflow-hidden group relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2.5rem] blur opacity-10 group-hover:opacity-30 transition duration-500"></div>
+                    
+                    <div class="relative bg-black rounded-[2rem] h-[500px] flex items-center justify-center overflow-hidden border border-white/5 shadow-inner">
+                        
+                        <video 
+                            id="globego-video"
+                            class="w-full h-full object-contain cursor-pointer" 
+                            autoplay 
+                            muted 
+                            loop 
+                            playsinline
+                            controls
+                            poster="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=1000">
+                            <source src="assets/video/globego-demo.mp4" type="video/mp4">
+                            Tarayıcınız video oynatmayı desteklemiyor.
+                        </video>
+
+                        <div class="absolute top-6 right-6 pointer-events-none group-hover:opacity-0 transition duration-300">
+                            <div class="bg-black/40 backdrop-blur-md px-3 py-1 rounded-lg border border-white/10">
+                                <p class="text-[10px] font-bold text-white/50 tracking-widest uppercase">HD 1080p</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute bottom-20 left-1/2 -translate-x-1/2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <p class="text-[10px] text-white/40 bg-black/60 px-4 py-2 rounded-full backdrop-blur-sm border border-white/5">
+                                <i class="fa-solid fa-volume-high mr-2"></i> Sesi açmak için video kontrollerini kullanın
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    /* Tarayıcının varsayılan kontrollerini GlobeGo stiline uydurmak için */
+                    video::-webkit-media-controls-panel {
+                        background-image: linear-gradient(transparent, rgba(15, 23, 42, 0.9)) !important;
+                    }
+                    video::-webkit-media-controls-play-button,
+                    video::-webkit-media-controls-mute-button {
+                        filter: invert(1); /* İkonları beyaza yaklaştırır */
+                    }
+                </style>
+
+                <div class="space-y-10">
+                    <div class="group flex gap-6 items-start">
+                        <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center shrink-0 text-blue-400 border border-blue-500/20 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-wand-sparkles text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3 italic group-hover:text-blue-400 transition">Dinamik Planlama Arayüzü</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Uygulama, Flutter'ın gücüyle saniyede 60 kare hızında, akıcı ve responsive bir deneyim sunar. Her dokunuşunuz yapay zeka ile anlık tepki verir.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="group flex gap-6 items-start">
+                        <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center shrink-0 text-purple-400 border border-purple-500/20 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-microchip text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-3 italic group-hover:text-purple-400 transition">Gelişmiş AI Analitiği</h4>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Arka planda çalışan makine öğrenmesi modelleri, harcama alışkanlıklarınızı analiz eder ve size özel tasarruf önerileri kurgulayarak bütçenizi korur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-white/5 border border-white/5 rounded-2xl mt-4">
+                        <p class="text-xs text-slate-500 leading-relaxed italic">
+                            * Gösterilen arayüz geliştirme aşamasındaki Beta versiyonuna aittir. Final sürümünde tasarımsal değişiklikler olabilir.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="waitlist" class="py-24 px-6 bg-gradient-to-b from-transparent to-blue-600/5">
+        <div class="max-w-4xl mx-auto glass-card p-12 rounded-[3rem] text-center border-blue-500/20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-10 opacity-10">
+                <i class="fa-solid fa-paper-plane text-9xl -rotate-12"></i>
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl font-black mb-6">Geleceği İlk Deneyen Sen Ol.</h2>
+            <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
+                Bahar 2026'da gerçekleşecek kapalı beta sürecine dahil olmak ve GlobeGo ekosisteminde yerini ayırtmak için listeye katıl.
+            </p>
+
+            <form action="mailto:ozdemirmmehmet@gmail.com" method="post" enctype="text/plain" class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+                <input type="email" name="email" placeholder="E-posta adresin" required 
+                       class="flex-1 bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-500 transition">
+                <button type="submit" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-2xl transition shadow-lg shadow-blue-500/20">
+                    Sıraya Gir
+                </button>
+            </form>
+            <p class="mt-6 text-xs text-slate-500 font-semibold tracking-widest uppercase">420+ Kişi Şimdiden Katıldı</p>
+        </div>
+    </section>
+    
+    <footer class="py-12 border-t border-white/5 text-center text-slate-500 text-sm">
+        <p>© 2026 GlobeGo - Seyahatin Geleceği. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
